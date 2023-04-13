@@ -18,7 +18,7 @@ E-mail: haonan_ji@yeah.net
 
 ## Introduction
 
-Sparse matrix-sparse vector multiplication (SpMSpV) is an important primitive for graph algorithms and machine learning applications. The sparsity of the input and output vectors makes its floating point efficiency in general lower than sparse matrix-vector multiplication (SpMV) and sparse matrix-matrix multiplication (SpGEMM). TileSpMSpV provides a tiled algorithm for accelerating SpMSpV on GPUs and proposes a TileBFS algorithm including three kernels called Push-CSC, Push-CSR and Pull-CSC.
+Sparse matrix-sparse vector multiplication (SpMSpV) is an important primitive for graph algorithms and machine learning applications. The sparsity of the input and output vectors makes its floating point efficiency in general lower than sparse matrix-vector multiplication (SpMV) and sparse matrix-matrix multiplication (SpGEMM). TileSpMSpV provides a tiled algorithm for BFS applying TileSpMSpV on GPUs including three kernels called Push-CSC, Push-CSR and Pull-CSC.
 
 
 <!-- ## Structure
@@ -39,7 +39,7 @@ Our test programs currently support input files encoded using the matrix market 
 1. The command 'make' generates an executable file 'test'.
 > **make**
 
-3. Run code on matrix data. Running the program requires three parameters: the number of threads, matrix path, and BFS source point.
+2. Run code on matrix data. Running the program requires three parameters: the number of threads, matrix path, and BFS source point.
 > **./test 16 test.mtx 0**
 
 
